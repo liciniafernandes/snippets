@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.hamburger-menu,
+.close-menu {
+  appearance: none;
+  border: none;
+  padding: 20px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.hamburger-menu .bar,
+.close-menu .bar {
+  margin: 3px 0;
+  width: 20px;
+  height: 2px;
+}
+
+.hamburger-menu .bar {
+  background-color: black;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: -290px;
+  padding: 60px 20px;
+  height: 100vh;
+  width: 250px;
+  background-color: #764b36;
+  color: white;
+  transition: left linear 0.5s;
+}
+
+.menu--open {
+  left: 0;
+}
+
+.menu a {
+  display: block;
+  margin-bottom: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.close-menu {
+  position: absolute;
+  left: 20px;
+  top: 30px;
+  padding: 0;
+}
+
+.close-menu .bar {
+  background-color: white;
+}
+
+.close-menu .bar:nth-child(1) {
+  transform: rotate(45deg);
+  margin: -1px;
+}
+
+.close-menu .bar:nth-child(2) {
+  transform: rotate(-45deg);
+  margin: -2px;
+}
