@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+}
+
+header,
+footer,
+aside,
+.container {
+  border: 5px solid #efe7dd;
+  padding: 70px;
+  background-color: #764b36;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+main {
+  display: flex;
+}
+
+aside,
+.container {
+  width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  aside,
+  .container {
+    width: 100%;
+  }
+}
